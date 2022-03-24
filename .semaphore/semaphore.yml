@@ -20,7 +20,7 @@ blocks:
       epilogue:
         always:
           commands:
-            - ./cc-test-reporter format-coverage -t lcov
+            - ./cc-test-reporter format-coverage -t lcov -d
         on_pass:
           commands:
             - ./cc-test-reporter after-build --exit-code 0
